@@ -3,19 +3,22 @@
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelector("#add").addEventListener("click", function () {
 		let task = document.querySelector("#area").value; // получаем содержимое textarea
-		let new_li = document.createElement("li");	// создаем новый элемент списка
-		let checkbox = document.createElement("input");	// создаем чекбокс для этого элемента
-		checkbox.setAttribute("type", "checkbox");
-		let radios = document.getElementsByName("priority");	// получаем список радио кнопок
-		let important = radios[0].checked ? true : false;	// проверяем выделен ли "важный" пункт
+		if (task != "") {
+			let new_li = document.createElement("li");	// создаем новый элемент списка
+			let checkbox = document.createElement("input");	// создаем чекбокс для этого элемента
+			checkbox.setAttribute("type", "checkbox");
+			let radios = document.getElementsByName("priority");	// получаем список радио кнопок
+			let important = radios[0].checked ? true : false;	// проверяем выделен ли "важный" пункт
 
-		if (important) new_li.classList.add("important");	// если выделен меняем оформление добавляющегося элемента списка
+			if (important) new_li.classList.add("important");	// если выделен меняем оформление добавляющегося элемента списка
 
-		new_li.append(checkbox);	// добавляем в новый элемент списка чекбокс
-		new_li.append(" " + task);	// и введеный текст
+			new_li.append(checkbox);	// добавляем в новый элемент списка чекбокс
+			new_li.append(" " + task);	// и введеный текст
 
-		let ul = document.querySelector(".list ul"); // добавляем новый элемент списка в сам список
-		ul.append(new_li);
+			let ul = document.querySelector(".list ul"); // добавляем новый элемент списка в сам список
+			ul.append(new_li);
+		}
+		else alert("Enter text!");
 	});
 
 	document.querySelector("#del").addEventListener("click", function () {
