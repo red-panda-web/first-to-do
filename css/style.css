@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body * {
+  font-size: 16px;
+}
+
+.wrap {
+  width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.form-item, button {
+  margin-bottom: 20px;
+}
+
+.form-item:first-child label, button:first-child label {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#area {
+  width: 100%;
+  resize: none;
+  min-height: 200px;
+  border: 2px dashed gray;
+  padding: 10px;
+  cursor: text;
+}
+
+.label {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.form-item__radio {
+  margin: 10px 0;
+}
+
+.form-item__radio label {
+  font-size: 18px;
+}
+
+button {
+  min-width: 30%;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.list {
+  margin-top: 20px;
+  border: 2px dashed gray;
+  height: 45%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.list li {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.important {
+  background-color: rgba(235, 129, 8, 0.884);
+}

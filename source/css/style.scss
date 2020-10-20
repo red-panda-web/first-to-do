@@ -1,0 +1,67 @@
+@import "_nullstyle.scss";
+
+body * {
+	font-size: 16px;
+}
+.wrap{
+  width: 500px;;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.form-item, button{
+  margin-bottom: 20px;
+  &:first-child{
+	  label{
+		  font-size: 20px;
+		  margin-bottom: 20px;
+		  display: inline-block;
+	  }
+  }
+}
+
+#area{
+  width: 100%;
+  resize: none;
+  min-height: 200px;
+  border: 2px dashed gray;
+  padding: 10px;
+  cursor: text;
+}
+
+.label{
+	font-size: 20px;
+	display: inline-block;
+}
+
+.form-item__radio{
+	margin: 10px 0;
+	label{
+		font-size: 18px;
+	}
+}
+
+button{
+	min-width: 30%;
+	padding: 15px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.list{
+	margin-top: 20px;
+	border: 2px dashed gray;
+	height: 45%;
+	overflow: auto;
+	padding: 10px;
+	li{
+		margin-bottom: 15px;
+		width: 100%;
+		padding: 10px;
+		border-radius: 5px;
+	}
+}
+
+.important{
+	background-color: rgba(235, 129, 8, 0.884);
+}

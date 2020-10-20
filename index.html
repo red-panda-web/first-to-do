@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>ToDo</title>
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<form action="#">
+			<div class="form-item">
+				<label for="area">Введи задачу:</label>
+				<textarea id="area"></textarea>
+			</div>
+
+			<div class="form-item">
+				<div class="label">Важность:</div>
+				<div class="form-item__radio">
+					<input type="radio" id="important" Checked name="priority">
+					<label for="important">Важная</label>
+				</div>
+				<div class="form-item__radio">
+					<input type="radio" id="common" name="priority">
+					<label for="common">Обычная</label>
+				</div>
+			</div>
+
+			<button id="add">Добавить</button>
+			<button id="del">Удалить выбранное</button>
+		</form>
+
+		<div class="label">Список дел:</div>
+		<div class="list">
+			<ul>
+				<li><input type="checkbox"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem recusandae
+					dolore expedita, voluptatum
+					explicabo quibusdam ipsum laudantium laboriosam officia vitae mollitia fugiat! Earum qui praesentium
+					officiis sint provident corporis iure!</li>
+				<li><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores fuga unde
+					quo ullam. Fugit
+					voluptatum ex, possimus iusto explicabo soluta.</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
